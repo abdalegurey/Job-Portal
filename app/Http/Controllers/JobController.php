@@ -13,7 +13,8 @@ class JobController extends Controller
     public function index()
     {
         //
-         $jobs = Job::latest()->get();
+       $jobs = Job::latest()->paginate(2); // 10 jobs per page
+
         return view('admin.jobs.index', compact('jobs'));
     }
 
