@@ -1,0 +1,1 @@
+ <td class="whitespace-no-wrap hidden py-4 text-sm font-normal text-gray-500 sm:px-6 lg:table-cell">{{  $slot}}</td>
